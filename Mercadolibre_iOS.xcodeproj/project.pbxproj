@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0E5FDD90A7D3D7EBB74C95A /* Pods_Mercadolibre_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00AF3DFAC722D39F54D1BA3 /* Pods_Mercadolibre_iOS.framework */; };
+		C8BD3D9B9F0247B0C9280879 /* Pods_Mercadolibre_iOS_Mercadolibre_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17D0426AD4D1B9F7E9B674D /* Pods_Mercadolibre_iOS_Mercadolibre_iOSUITests.framework */; };
+		E8D2CA000E996455A9219FA9 /* Pods_Mercadolibre_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A413D9EA02AB1B831DE4DE /* Pods_Mercadolibre_iOSTests.framework */; };
 		FB4AC00325A18C4D00E7D1E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */; };
 		FB4AC00525A18C4D00E7D1E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */; };
 		FB4AC00725A18C4D00E7D1E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00625A18C4D00E7D1E7 /* ViewController.swift */; };
@@ -34,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		478173A53FEEB9CDB8AD9574 /* Pods-Mercadolibre_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadolibre_iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Mercadolibre_iOSTests/Pods-Mercadolibre_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6381C31E34C68DF7976A983D /* Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests/Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C5430FCD4D127980A7460E3 /* Pods-Mercadolibre_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadolibre_iOS.release.xcconfig"; path = "Target Support Files/Pods-Mercadolibre_iOS/Pods-Mercadolibre_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		79879ACB8091BB9942238D03 /* Pods-Mercadolibre_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadolibre_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Mercadolibre_iOSTests/Pods-Mercadolibre_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DC8A549C96A992E638AF98E /* Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests/Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83A413D9EA02AB1B831DE4DE /* Pods_Mercadolibre_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mercadolibre_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35A38139709D13C157A2176 /* Pods-Mercadolibre_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadolibre_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Mercadolibre_iOS/Pods-Mercadolibre_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D00AF3DFAC722D39F54D1BA3 /* Pods_Mercadolibre_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mercadolibre_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17D0426AD4D1B9F7E9B674D /* Pods_Mercadolibre_iOS_Mercadolibre_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mercadolibre_iOS_Mercadolibre_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4ABFFF25A18C4D00E7D1E7 /* Mercadolibre_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mercadolibre_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E5FDD90A7D3D7EBB74C95A /* Pods_Mercadolibre_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8D2CA000E996455A9219FA9 /* Pods_Mercadolibre_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8BD3D9B9F0247B0C9280879 /* Pods_Mercadolibre_iOS_Mercadolibre_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F9A6FD3570CC18FFEDBE108 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C35A38139709D13C157A2176 /* Pods-Mercadolibre_iOS.debug.xcconfig */,
+				6C5430FCD4D127980A7460E3 /* Pods-Mercadolibre_iOS.release.xcconfig */,
+				6381C31E34C68DF7976A983D /* Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests.debug.xcconfig */,
+				7DC8A549C96A992E638AF98E /* Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests.release.xcconfig */,
+				478173A53FEEB9CDB8AD9574 /* Pods-Mercadolibre_iOSTests.debug.xcconfig */,
+				79879ACB8091BB9942238D03 /* Pods-Mercadolibre_iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		770BF9C5EA23AE525C5D925D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D00AF3DFAC722D39F54D1BA3 /* Pods_Mercadolibre_iOS.framework */,
+				D17D0426AD4D1B9F7E9B674D /* Pods_Mercadolibre_iOS_Mercadolibre_iOSUITests.framework */,
+				83A413D9EA02AB1B831DE4DE /* Pods_Mercadolibre_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB4ABFF625A18C4D00E7D1E7 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +120,8 @@
 				FB4AC01825A18C5000E7D1E7 /* Mercadolibre_iOSTests */,
 				FB4AC02325A18C5000E7D1E7 /* Mercadolibre_iOSUITests */,
 				FB4AC00025A18C4D00E7D1E7 /* Products */,
+				3F9A6FD3570CC18FFEDBE108 /* Pods */,
+				770BF9C5EA23AE525C5D925D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB4AC02925A18C5000E7D1E7 /* Build configuration list for PBXNativeTarget "Mercadolibre_iOS" */;
 			buildPhases = (
+				BCAD18019F1699EB0EE70821 /* [CP] Check Pods Manifest.lock */,
 				FB4ABFFB25A18C4D00E7D1E7 /* Sources */,
 				FB4ABFFC25A18C4D00E7D1E7 /* Frameworks */,
 				FB4ABFFD25A18C4D00E7D1E7 /* Resources */,
+				748526C9BD49C5DCBF86A08E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB4AC02C25A18C5000E7D1E7 /* Build configuration list for PBXNativeTarget "Mercadolibre_iOSTests" */;
 			buildPhases = (
+				494863D28AF7F3C5C97C4257 /* [CP] Check Pods Manifest.lock */,
 				FB4AC01125A18C5000E7D1E7 /* Sources */,
 				FB4AC01225A18C5000E7D1E7 /* Frameworks */,
 				FB4AC01325A18C5000E7D1E7 /* Resources */,
@@ -207,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB4AC02F25A18C5000E7D1E7 /* Build configuration list for PBXNativeTarget "Mercadolibre_iOSUITests" */;
 			buildPhases = (
+				47B04448098E5C181209DEC2 /* [CP] Check Pods Manifest.lock */,
 				FB4AC01C25A18C5000E7D1E7 /* Sources */,
 				FB4AC01D25A18C5000E7D1E7 /* Frameworks */,
 				FB4AC01E25A18C5000E7D1E7 /* Resources */,
+				FC1BAEADFAF6113B0162D983 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +334,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47B04448098E5C181209DEC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		494863D28AF7F3C5C97C4257 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mercadolibre_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		748526C9BD49C5DCBF86A08E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mercadolibre_iOS/Pods-Mercadolibre_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mercadolibre_iOS/Pods-Mercadolibre_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mercadolibre_iOS/Pods-Mercadolibre_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCAD18019F1699EB0EE70821 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mercadolibre_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC1BAEADFAF6113B0162D983 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests/Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests/Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests/Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB4ABFFB25A18C4D00E7D1E7 /* Sources */ = {
@@ -461,6 +610,7 @@
 		};
 		FB4AC02A25A18C5000E7D1E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35A38139709D13C157A2176 /* Pods-Mercadolibre_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -479,6 +629,7 @@
 		};
 		FB4AC02B25A18C5000E7D1E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C5430FCD4D127980A7460E3 /* Pods-Mercadolibre_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -497,6 +648,7 @@
 		};
 		FB4AC02D25A18C5000E7D1E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 478173A53FEEB9CDB8AD9574 /* Pods-Mercadolibre_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +670,7 @@
 		};
 		FB4AC02E25A18C5000E7D1E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79879ACB8091BB9942238D03 /* Pods-Mercadolibre_iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -539,6 +692,7 @@
 		};
 		FB4AC03025A18C5000E7D1E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6381C31E34C68DF7976A983D /* Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +712,7 @@
 		};
 		FB4AC03125A18C5000E7D1E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC8A549C96A992E638AF98E /* Pods-Mercadolibre_iOS-Mercadolibre_iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
