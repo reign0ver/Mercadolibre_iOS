@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB4AC00325A18C4D00E7D1E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */; };
+		FB4AC00525A18C4D00E7D1E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */; };
+		FB4AC00725A18C4D00E7D1E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00625A18C4D00E7D1E7 /* ViewController.swift */; };
+		FB4AC00A25A18C4D00E7D1E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4AC00825A18C4D00E7D1E7 /* Main.storyboard */; };
+		FB4AC00C25A18C4F00E7D1E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4AC00B25A18C4F00E7D1E7 /* Assets.xcassets */; };
+		FB4AC00F25A18C4F00E7D1E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4AC00D25A18C4F00E7D1E7 /* LaunchScreen.storyboard */; };
+		FB4AC01A25A18C5000E7D1E7 /* Mercadolibre_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC01925A18C5000E7D1E7 /* Mercadolibre_iOSTests.swift */; };
+		FB4AC02525A18C5000E7D1E7 /* Mercadolibre_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC02425A18C5000E7D1E7 /* Mercadolibre_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB4AC01625A18C5000E7D1E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB4ABFF725A18C4D00E7D1E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB4ABFFE25A18C4D00E7D1E7;
+			remoteInfo = Mercadolibre_iOS;
+		};
+		FB4AC02125A18C5000E7D1E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB4ABFF725A18C4D00E7D1E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB4ABFFE25A18C4D00E7D1E7;
+			remoteInfo = Mercadolibre_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB4ABFFF25A18C4D00E7D1E7 /* Mercadolibre_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mercadolibre_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FB4AC00625A18C4D00E7D1E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB4AC00925A18C4D00E7D1E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB4AC00B25A18C4F00E7D1E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB4AC00E25A18C4F00E7D1E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB4AC01025A18C4F00E7D1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4AC01525A18C5000E7D1E7 /* Mercadolibre_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mercadolibre_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4AC01925A18C5000E7D1E7 /* Mercadolibre_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mercadolibre_iOSTests.swift; sourceTree = "<group>"; };
+		FB4AC01B25A18C5000E7D1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4AC02025A18C5000E7D1E7 /* Mercadolibre_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mercadolibre_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4AC02425A18C5000E7D1E7 /* Mercadolibre_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mercadolibre_iOSUITests.swift; sourceTree = "<group>"; };
+		FB4AC02625A18C5000E7D1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB4ABFFC25A18C4D00E7D1E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4AC01225A18C5000E7D1E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4AC01D25A18C5000E7D1E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB4ABFF625A18C4D00E7D1E7 = {
+			isa = PBXGroup;
+			children = (
+				FB4AC00125A18C4D00E7D1E7 /* Mercadolibre_iOS */,
+				FB4AC01825A18C5000E7D1E7 /* Mercadolibre_iOSTests */,
+				FB4AC02325A18C5000E7D1E7 /* Mercadolibre_iOSUITests */,
+				FB4AC00025A18C4D00E7D1E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB4AC00025A18C4D00E7D1E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB4ABFFF25A18C4D00E7D1E7 /* Mercadolibre_iOS.app */,
+				FB4AC01525A18C5000E7D1E7 /* Mercadolibre_iOSTests.xctest */,
+				FB4AC02025A18C5000E7D1E7 /* Mercadolibre_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB4AC00125A18C4D00E7D1E7 /* Mercadolibre_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */,
+				FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */,
+				FB4AC00625A18C4D00E7D1E7 /* ViewController.swift */,
+				FB4AC00825A18C4D00E7D1E7 /* Main.storyboard */,
+				FB4AC00B25A18C4F00E7D1E7 /* Assets.xcassets */,
+				FB4AC00D25A18C4F00E7D1E7 /* LaunchScreen.storyboard */,
+				FB4AC01025A18C4F00E7D1E7 /* Info.plist */,
+			);
+			path = Mercadolibre_iOS;
+			sourceTree = "<group>";
+		};
+		FB4AC01825A18C5000E7D1E7 /* Mercadolibre_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB4AC01925A18C5000E7D1E7 /* Mercadolibre_iOSTests.swift */,
+				FB4AC01B25A18C5000E7D1E7 /* Info.plist */,
+			);
+			path = Mercadolibre_iOSTests;
+			sourceTree = "<group>";
+		};
+		FB4AC02325A18C5000E7D1E7 /* Mercadolibre_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB4AC02425A18C5000E7D1E7 /* Mercadolibre_iOSUITests.swift */,
+				FB4AC02625A18C5000E7D1E7 /* Info.plist */,
+			);
+			path = Mercadolibre_iOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB4ABFFE25A18C4D00E7D1E7 /* Mercadolibre_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4AC02925A18C5000E7D1E7 /* Build configuration list for PBXNativeTarget "Mercadolibre_iOS" */;
+			buildPhases = (
+				FB4ABFFB25A18C4D00E7D1E7 /* Sources */,
+				FB4ABFFC25A18C4D00E7D1E7 /* Frameworks */,
+				FB4ABFFD25A18C4D00E7D1E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mercadolibre_iOS;
+			productName = Mercadolibre_iOS;
+			productReference = FB4ABFFF25A18C4D00E7D1E7 /* Mercadolibre_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB4AC01425A18C5000E7D1E7 /* Mercadolibre_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4AC02C25A18C5000E7D1E7 /* Build configuration list for PBXNativeTarget "Mercadolibre_iOSTests" */;
+			buildPhases = (
+				FB4AC01125A18C5000E7D1E7 /* Sources */,
+				FB4AC01225A18C5000E7D1E7 /* Frameworks */,
+				FB4AC01325A18C5000E7D1E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB4AC01725A18C5000E7D1E7 /* PBXTargetDependency */,
+			);
+			name = Mercadolibre_iOSTests;
+			productName = Mercadolibre_iOSTests;
+			productReference = FB4AC01525A18C5000E7D1E7 /* Mercadolibre_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB4AC01F25A18C5000E7D1E7 /* Mercadolibre_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4AC02F25A18C5000E7D1E7 /* Build configuration list for PBXNativeTarget "Mercadolibre_iOSUITests" */;
+			buildPhases = (
+				FB4AC01C25A18C5000E7D1E7 /* Sources */,
+				FB4AC01D25A18C5000E7D1E7 /* Frameworks */,
+				FB4AC01E25A18C5000E7D1E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB4AC02225A18C5000E7D1E7 /* PBXTargetDependency */,
+			);
+			name = Mercadolibre_iOSUITests;
+			productName = Mercadolibre_iOSUITests;
+			productReference = FB4AC02025A18C5000E7D1E7 /* Mercadolibre_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB4ABFF725A18C4D00E7D1E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					FB4ABFFE25A18C4D00E7D1E7 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					FB4AC01425A18C5000E7D1E7 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = FB4ABFFE25A18C4D00E7D1E7;
+					};
+					FB4AC01F25A18C5000E7D1E7 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = FB4ABFFE25A18C4D00E7D1E7;
+					};
+				};
+			};
+			buildConfigurationList = FB4ABFFA25A18C4D00E7D1E7 /* Build configuration list for PBXProject "Mercadolibre_iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB4ABFF625A18C4D00E7D1E7;
+			productRefGroup = FB4AC00025A18C4D00E7D1E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB4ABFFE25A18C4D00E7D1E7 /* Mercadolibre_iOS */,
+				FB4AC01425A18C5000E7D1E7 /* Mercadolibre_iOSTests */,
+				FB4AC01F25A18C5000E7D1E7 /* Mercadolibre_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB4ABFFD25A18C4D00E7D1E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4AC00F25A18C4F00E7D1E7 /* LaunchScreen.storyboard in Resources */,
+				FB4AC00C25A18C4F00E7D1E7 /* Assets.xcassets in Resources */,
+				FB4AC00A25A18C4D00E7D1E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4AC01325A18C5000E7D1E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4AC01E25A18C5000E7D1E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB4ABFFB25A18C4D00E7D1E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4AC00725A18C4D00E7D1E7 /* ViewController.swift in Sources */,
+				FB4AC00325A18C4D00E7D1E7 /* AppDelegate.swift in Sources */,
+				FB4AC00525A18C4D00E7D1E7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4AC01125A18C5000E7D1E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4AC01A25A18C5000E7D1E7 /* Mercadolibre_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4AC01C25A18C5000E7D1E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4AC02525A18C5000E7D1E7 /* Mercadolibre_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB4AC01725A18C5000E7D1E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB4ABFFE25A18C4D00E7D1E7 /* Mercadolibre_iOS */;
+			targetProxy = FB4AC01625A18C5000E7D1E7 /* PBXContainerItemProxy */;
+		};
+		FB4AC02225A18C5000E7D1E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB4ABFFE25A18C4D00E7D1E7 /* Mercadolibre_iOS */;
+			targetProxy = FB4AC02125A18C5000E7D1E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB4AC00825A18C4D00E7D1E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB4AC00925A18C4D00E7D1E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB4AC00D25A18C4F00E7D1E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB4AC00E25A18C4F00E7D1E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB4AC02725A18C5000E7D1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB4AC02825A18C5000E7D1E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB4AC02A25A18C5000E7D1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mercadolibre_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrescarrillo.Mercadolibre-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB4AC02B25A18C5000E7D1E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mercadolibre_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrescarrillo.Mercadolibre-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB4AC02D25A18C5000E7D1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mercadolibre_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrescarrillo.Mercadolibre-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mercadolibre_iOS.app/Mercadolibre_iOS";
+			};
+			name = Debug;
+		};
+		FB4AC02E25A18C5000E7D1E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mercadolibre_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrescarrillo.Mercadolibre-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mercadolibre_iOS.app/Mercadolibre_iOS";
+			};
+			name = Release;
+		};
+		FB4AC03025A18C5000E7D1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mercadolibre_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrescarrillo.Mercadolibre-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mercadolibre_iOS;
+			};
+			name = Debug;
+		};
+		FB4AC03125A18C5000E7D1E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mercadolibre_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrescarrillo.Mercadolibre-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mercadolibre_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB4ABFFA25A18C4D00E7D1E7 /* Build configuration list for PBXProject "Mercadolibre_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4AC02725A18C5000E7D1E7 /* Debug */,
+				FB4AC02825A18C5000E7D1E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4AC02925A18C5000E7D1E7 /* Build configuration list for PBXNativeTarget "Mercadolibre_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4AC02A25A18C5000E7D1E7 /* Debug */,
+				FB4AC02B25A18C5000E7D1E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4AC02C25A18C5000E7D1E7 /* Build configuration list for PBXNativeTarget "Mercadolibre_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4AC02D25A18C5000E7D1E7 /* Debug */,
+				FB4AC02E25A18C5000E7D1E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4AC02F25A18C5000E7D1E7 /* Build configuration list for PBXNativeTarget "Mercadolibre_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4AC03025A18C5000E7D1E7 /* Debug */,
+				FB4AC03125A18C5000E7D1E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB4ABFF725A18C4D00E7D1E7 /* Project object */;
+}
