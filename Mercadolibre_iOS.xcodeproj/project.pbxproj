@@ -10,7 +10,6 @@
 		FB4AC00325A18C4D00E7D1E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */; };
 		FB4AC00525A18C4D00E7D1E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */; };
 		FB4AC00725A18C4D00E7D1E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00625A18C4D00E7D1E7 /* ViewController.swift */; };
-		FB4AC00A25A18C4D00E7D1E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4AC00825A18C4D00E7D1E7 /* Main.storyboard */; };
 		FB4AC00C25A18C4F00E7D1E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4AC00B25A18C4F00E7D1E7 /* Assets.xcassets */; };
 		FB4AC00F25A18C4F00E7D1E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4AC00D25A18C4F00E7D1E7 /* LaunchScreen.storyboard */; };
 		FB4AC01A25A18C5000E7D1E7 /* Mercadolibre_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC01925A18C5000E7D1E7 /* Mercadolibre_iOSTests.swift */; };
@@ -39,7 +38,6 @@
 		FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB4AC00625A18C4D00E7D1E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB4AC00925A18C4D00E7D1E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB4AC00B25A18C4F00E7D1E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB4AC00E25A18C4F00E7D1E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB4AC01025A18C4F00E7D1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,10 +97,14 @@
 		FB4AC00125A18C4D00E7D1E7 /* Mercadolibre_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FB4AC04325A1903600E7D1E7 /* Presentation */,
+				FB4AC04425A1904F00E7D1E7 /* Framework */,
+				FB4AC04525A1905D00E7D1E7 /* Domain */,
+				FB4AC04625A1906700E7D1E7 /* Data */,
+				FB4AC04725A1907500E7D1E7 /* UseCases */,
 				FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */,
 				FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */,
 				FB4AC00625A18C4D00E7D1E7 /* ViewController.swift */,
-				FB4AC00825A18C4D00E7D1E7 /* Main.storyboard */,
 				FB4AC00B25A18C4F00E7D1E7 /* Assets.xcassets */,
 				FB4AC00D25A18C4F00E7D1E7 /* LaunchScreen.storyboard */,
 				FB4AC01025A18C4F00E7D1E7 /* Info.plist */,
@@ -126,6 +128,41 @@
 				FB4AC02625A18C5000E7D1E7 /* Info.plist */,
 			);
 			path = Mercadolibre_iOSUITests;
+			sourceTree = "<group>";
+		};
+		FB4AC04325A1903600E7D1E7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FB4AC04425A1904F00E7D1E7 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		FB4AC04525A1905D00E7D1E7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FB4AC04625A1906700E7D1E7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB4AC04725A1907500E7D1E7 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +270,6 @@
 			files = (
 				FB4AC00F25A18C4F00E7D1E7 /* LaunchScreen.storyboard in Resources */,
 				FB4AC00C25A18C4F00E7D1E7 /* Assets.xcassets in Resources */,
-				FB4AC00A25A18C4D00E7D1E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +332,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FB4AC00825A18C4D00E7D1E7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB4AC00925A18C4D00E7D1E7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB4AC00D25A18C4F00E7D1E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
