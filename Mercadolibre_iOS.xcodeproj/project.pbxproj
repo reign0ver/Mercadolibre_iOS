@@ -34,6 +34,7 @@
 		FB70FB2B25A2901200D6AD1F /* SearchItemsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB2A25A2901200D6AD1F /* SearchItemsCoordinator.swift */; };
 		FB70FB3225A2917B00D6AD1F /* SearchItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB3125A2917B00D6AD1F /* SearchItemCell.swift */; };
 		FB70FB3725A2947200D6AD1F /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB3625A2947200D6AD1F /* UIImageView+Extensions.swift */; };
+		FB70FB3C25A2E6EB00D6AD1F /* ItemDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB3B25A2E6EB00D6AD1F /* ItemDetailsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		FB70FB2A25A2901200D6AD1F /* SearchItemsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsCoordinator.swift; sourceTree = "<group>"; };
 		FB70FB3125A2917B00D6AD1F /* SearchItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemCell.swift; sourceTree = "<group>"; };
 		FB70FB3625A2947200D6AD1F /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		FB70FB3B25A2E6EB00D6AD1F /* ItemDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +258,7 @@
 				FB4AC06125A1A32F00E7D1E7 /* Coordinator.swift */,
 				FB4AC06925A1A36400E7D1E7 /* AppCoordinator.swift */,
 				FB70FB2A25A2901200D6AD1F /* SearchItemsCoordinator.swift */,
+				FB70FB3B25A2E6EB00D6AD1F /* ItemDetailsCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				FB4AC08025A1BDA000E7D1E7 /* BaseNetwork.swift in Sources */,
 				FB70FB3225A2917B00D6AD1F /* SearchItemCell.swift in Sources */,
 				FB70FB3725A2947200D6AD1F /* UIImageView+Extensions.swift in Sources */,
+				FB70FB3C25A2E6EB00D6AD1F /* ItemDetailsCoordinator.swift in Sources */,
 				FB4AC06225A1A32F00E7D1E7 /* Coordinator.swift in Sources */,
 				FB4AC09725A1BF7500E7D1E7 /* SearchItemsRemoteDataSource.swift in Sources */,
 				FB4AC00725A18C4D00E7D1E7 /* SearchItemsViewController.swift in Sources */,
@@ -698,7 +702,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -753,7 +757,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -770,6 +774,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5P2QQT4YR;
 				INFOPLIST_FILE = Mercadolibre_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -789,6 +794,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5P2QQT4YR;
 				INFOPLIST_FILE = Mercadolibre_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

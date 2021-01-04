@@ -41,13 +41,12 @@ final class SearchItemCell: UITableViewCell {
     /* This function takes a Double or Int value and returns
     a String with the value formatted in COP starting with $ symbol
     i.e: valueEntered = 90000.0 - String returned -> $90.000 */
+    
     private func currencyFormat(value: Double) -> String {
         let formatter = NumberFormatter()
-
-        formatter.currencySymbol = "$"
-        print(Locale.availableIdentifiers)
-        formatter.locale = Locale(identifier: "es_CO")
         formatter.numberStyle = .currency
+        formatter.currencySymbol = "$"
+        formatter.locale = Locale(identifier: "es_CO")
         
         return formatter.string(from: value as NSNumber) ?? ""
     }

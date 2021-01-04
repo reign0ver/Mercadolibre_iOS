@@ -16,15 +16,6 @@ final class SearchItemsRepository {
     }
     
     func getListOfItems(params: String, completion: @escaping (Result<SearchResponse, NetworkError>) -> Void) {
-        remoteDataSource.getSearchedItems(params: params) { result in
-            switch result {
-            case .success(let items):
-                completion(.success(items))
-                break
-            case .failure(let error):
-                completion(.failure(error))
-                break
-            }
-        }
+        remoteDataSource.getSearchedItems(params: params, completion: completion)
     }
 }

@@ -16,8 +16,7 @@ final class SearchItemsCoordinator: Coordinator {
     }
     
     func start() {
-        let presenter = AppDelegate.shared.diManager.getContainer().resolve(SearchItemsPresenter.self)!
-        let vc = SearchItemsViewController(presenter)
+        let vc = AppDelegate.shared.diManager.getContainer().resolve(SearchItemsViewController.self)!
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }

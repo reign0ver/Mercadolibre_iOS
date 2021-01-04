@@ -19,7 +19,9 @@ final class SearchItemsPresenter {
     weak var delegate: SearchItemsPresenterDelegate?
     private let searchItemsInteractor: SearchItemsInteractor
     
+    //MARK: View messages
     let navigationTitle = "Búsqueda"
+    let searchBarPlaceholder = "Buscar en Mercado Libre"
     
     init(_ searchItemsInteractor: SearchItemsInteractor) {
         self.searchItemsInteractor = searchItemsInteractor
@@ -33,7 +35,7 @@ final class SearchItemsPresenter {
             case .success(let response):
                 strongSelf.items = response.results
                 strongSelf.delegate?.reloadData()
-                strongSelf.view?.hideLoading() // TODO
+                strongSelf.view?.hideLoading()
                 break
             case .failure(let error):
                 print(error) // TODO - handle error

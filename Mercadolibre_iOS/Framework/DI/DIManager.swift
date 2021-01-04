@@ -48,7 +48,7 @@ final class DIManager {
         
         //ViewControllers
         container.register(SearchItemsViewController.self) { resolver in
-            SearchItemsViewController(resolver.resolve(SearchItemsPresenter.self)!)
+            SearchItemsViewController(presenter: resolver.resolve(SearchItemsPresenter.self)!)
         }
     }
 }

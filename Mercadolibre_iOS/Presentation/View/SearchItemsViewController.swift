@@ -11,9 +11,11 @@ final class SearchItemsViewController: UITableViewController {
     
     weak var coordinator: Coordinator?
     private let presenter: SearchItemsPresenter
+    private let searchController: UISearchController
     
-    init(_ presenter: SearchItemsPresenter) {
+    init(presenter: SearchItemsPresenter) {
         self.presenter = presenter
+        self.searchController = UISearchController()
         super.init(nibName: nil, bundle: nil)
         self.presenter.view = self
     }
@@ -22,7 +24,7 @@ final class SearchItemsViewController: UITableViewController {
         super.viewDidLoad()
         presenter.delegate = self
         setupTableView()
-        presenter.executeSearch(with: "Audifonos")
+        setupSearchController()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +35,20 @@ final class SearchItemsViewController: UITableViewController {
     private func setupNavigationBar() {
         self.navigationItem.title = presenter.navigationTitle
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.largeTitleDisplayMode = .always
+        self.navigationItem.largeTitleDisplayMode = .always
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .systemYellow
+        self.navigationController?.navigationBar.standardAppearance = appearance
+        self.navigationController?.navigationBar.compactAppearance = appearance
+        self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
+    }
+    
+    private func setupSearchController () {
+        searchController.searchBar.delegate = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = presenter.searchBarPlaceholder
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
     }
     
     private func setupTableView() {
@@ -76,6 +91,16 @@ extension SearchItemsViewController: SearchItemsPresenterDelegate {
     func reloadData() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
+        }
+    }
+}
+
+// MARK: - SearchController Delegate
+
+extension SearchItemsViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if let searchText = searchBar.text {
+            presenter.executeSearch(with: searchText)
         }
     }
 }
