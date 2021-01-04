@@ -20,13 +20,11 @@ class AppCoordinator: Coordinator {
     func start() {
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
-        coordinateToTabBar()
+        coordinateToMainCoordinator()
     }
     
-    private func coordinateToTabBar() { //rename
-        //TODO
-        let vc = ViewController()
-        navigationController.pushViewController(vc, animated: true)
-        //coordinate(to: tabBarCoordinator)
+    private func coordinateToMainCoordinator() {
+        let searchItemsCoordinator = SearchItemsCoordinator(navController: navigationController) // class variable?
+        coordinate(to: searchItemsCoordinator)
     }
 }

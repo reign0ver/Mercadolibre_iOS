@@ -9,13 +9,14 @@ import Foundation
 
 final class SearchItemsService: BaseNetwork, SearchItemsRemoteDataSource {
     
-    func getSearchedItems(completion: @escaping (Result<[SearchItem], NetworkError>) -> Void) {
-        let endpoint = NetworkConstants.searchItems + "iPhone+X" // can definitely goes better
+    func getSearchedItems(params: String, completion: @escaping (Result<SearchResponse, NetworkError>) -> Void) {
+        let endpoint = NetworkConstants.searchItems + params
         
         sendRequest(endpoint, of: SearchResponse.self) { result in
             switch result {
             case .success(let response):
-                completion(.success(response.results))
+                print(response)
+                completion(.success(response))
                 break
             case.failure(let error):
                 completion(.failure(error))

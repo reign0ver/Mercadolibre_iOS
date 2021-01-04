@@ -10,29 +10,32 @@ import Alamofire
 
 class BaseNetwork {
     
-    //TODO: Check error handling (refactor if possible)
     func sendRequest<T: Decodable>(_ endpoint: String, of: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) {
         let requestURL = NetworkConstants.baseURL + endpoint
         
-        let request = AF.request(requestURL, method: .get)
-        request
+        AF.request(requestURL, method: .get)
             .validate(statusCode: 200..<300)
             .responseDecodable(of: T.self, queue: .global(qos: .background)) { response in
-                if let error = response.error {
-                    print(error)
-                    completion(.failure(.parsingData))
-                    return
-                }
-                let validationResult = response.result
-                switch validationResult {
+                let result = response.result
+                switch result {
                 case .success(let object):
                     completion(.success(object))
                     break
                 case .failure(let error):
-                    print(error)
-                    completion(.failure(.responseUnsuccessfull))
+                    if error.isInvalidURLError {
+                        completion(.failure(.invalidURL))
+                        print("..::Invalid URL or query param::.. \n \(error)")
+                        break
+                    }
+                    if error.isResponseSerializationError {
+                        completion(.failure(.parsingData))
+                        print("..::Error while parsing data::.. \n \(error)")
+                        break
+                    }
+                    print("..::Any other error::.. \n \(error)")
                     break
                 }
-        }
+            }
     }
+    // TODO - Another func to validate errors
 }

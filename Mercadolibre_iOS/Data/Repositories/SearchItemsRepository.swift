@@ -15,14 +15,14 @@ final class SearchItemsRepository {
         self.remoteDataSource = remoteDataSource
     }
     
-    func getListOfItems() {
-        remoteDataSource.getSearchedItems { result in
+    func getListOfItems(params: String, completion: @escaping (Result<SearchResponse, NetworkError>) -> Void) {
+        remoteDataSource.getSearchedItems(params: params) { result in
             switch result {
             case .success(let items):
-                print(items)
+                completion(.success(items))
                 break
             case .failure(let error):
-                print(error)
+                completion(.failure(error))
                 break
             }
         }

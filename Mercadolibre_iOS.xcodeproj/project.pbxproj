@@ -12,7 +12,7 @@
 		E8D2CA000E996455A9219FA9 /* Pods_Mercadolibre_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A413D9EA02AB1B831DE4DE /* Pods_Mercadolibre_iOSTests.framework */; };
 		FB4AC00325A18C4D00E7D1E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */; };
 		FB4AC00525A18C4D00E7D1E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */; };
-		FB4AC00725A18C4D00E7D1E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00625A18C4D00E7D1E7 /* ViewController.swift */; };
+		FB4AC00725A18C4D00E7D1E7 /* SearchItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00625A18C4D00E7D1E7 /* SearchItemsViewController.swift */; };
 		FB4AC00C25A18C4F00E7D1E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4AC00B25A18C4F00E7D1E7 /* Assets.xcassets */; };
 		FB4AC00F25A18C4F00E7D1E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4AC00D25A18C4F00E7D1E7 /* LaunchScreen.storyboard */; };
 		FB4AC01A25A18C5000E7D1E7 /* Mercadolibre_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC01925A18C5000E7D1E7 /* Mercadolibre_iOSTests.swift */; };
@@ -27,6 +27,13 @@
 		FB4AC09225A1BF2E00E7D1E7 /* SearchItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC09125A1BF2E00E7D1E7 /* SearchItemsRepository.swift */; };
 		FB4AC09725A1BF7500E7D1E7 /* SearchItemsRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC09625A1BF7500E7D1E7 /* SearchItemsRemoteDataSource.swift */; };
 		FB4AC09C25A1C0A900E7D1E7 /* SearchItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC09B25A1C0A900E7D1E7 /* SearchItemsService.swift */; };
+		FB70FB0C25A23AE500D6AD1F /* SearchItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB0B25A23AE500D6AD1F /* SearchItemsInteractor.swift */; };
+		FB70FB1A25A253F500D6AD1F /* SearchItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB1925A253F500D6AD1F /* SearchItemsPresenter.swift */; };
+		FB70FB2025A2594600D6AD1F /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB1F25A2594600D6AD1F /* DIManager.swift */; };
+		FB70FB2625A285E300D6AD1F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB2525A285E300D6AD1F /* UIViewController+Extensions.swift */; };
+		FB70FB2B25A2901200D6AD1F /* SearchItemsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB2A25A2901200D6AD1F /* SearchItemsCoordinator.swift */; };
+		FB70FB3225A2917B00D6AD1F /* SearchItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB3125A2917B00D6AD1F /* SearchItemCell.swift */; };
+		FB70FB3725A2947200D6AD1F /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB3625A2947200D6AD1F /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +66,7 @@
 		FB4ABFFF25A18C4D00E7D1E7 /* Mercadolibre_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mercadolibre_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB4AC00625A18C4D00E7D1E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB4AC00625A18C4D00E7D1E7 /* SearchItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsViewController.swift; sourceTree = "<group>"; };
 		FB4AC00B25A18C4F00E7D1E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB4AC00E25A18C4F00E7D1E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB4AC01025A18C4F00E7D1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +86,13 @@
 		FB4AC09125A1BF2E00E7D1E7 /* SearchItemsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsRepository.swift; sourceTree = "<group>"; };
 		FB4AC09625A1BF7500E7D1E7 /* SearchItemsRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsRemoteDataSource.swift; sourceTree = "<group>"; };
 		FB4AC09B25A1C0A900E7D1E7 /* SearchItemsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsService.swift; sourceTree = "<group>"; };
+		FB70FB0B25A23AE500D6AD1F /* SearchItemsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsInteractor.swift; sourceTree = "<group>"; };
+		FB70FB1925A253F500D6AD1F /* SearchItemsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsPresenter.swift; sourceTree = "<group>"; };
+		FB70FB1F25A2594600D6AD1F /* DIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
+		FB70FB2525A285E300D6AD1F /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		FB70FB2A25A2901200D6AD1F /* SearchItemsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsCoordinator.swift; sourceTree = "<group>"; };
+		FB70FB3125A2917B00D6AD1F /* SearchItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemCell.swift; sourceTree = "<group>"; };
+		FB70FB3625A2947200D6AD1F /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +178,6 @@
 				FB4AC04725A1907500E7D1E7 /* Interactors */,
 				FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */,
 				FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */,
-				FB4AC00625A18C4D00E7D1E7 /* ViewController.swift */,
 				FB4AC00B25A18C4F00E7D1E7 /* Assets.xcassets */,
 				FB4AC00D25A18C4F00E7D1E7 /* LaunchScreen.storyboard */,
 				FB4AC01025A18C4F00E7D1E7 /* Info.plist */,
@@ -193,6 +206,8 @@
 		FB4AC04325A1903600E7D1E7 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FB70FB1025A2535C00D6AD1F /* View */,
+				FB70FB1125A2536700D6AD1F /* Presenter */,
 				FB4AC06025A1A30700E7D1E7 /* Coordinator */,
 			);
 			path = Presentation;
@@ -201,6 +216,8 @@
 		FB4AC04425A1904F00E7D1E7 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				FB70FB2425A285AF00D6AD1F /* Extensions */,
+				FB70FB1E25A2591000D6AD1F /* DI */,
 				FB4AC07E25A1BD5D00E7D1E7 /* Networking */,
 			);
 			path = Framework;
@@ -228,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				FB4AC07425A1B14900E7D1E7 /* Interactor.swift */,
+				FB70FB0B25A23AE500D6AD1F /* SearchItemsInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -237,6 +255,7 @@
 			children = (
 				FB4AC06125A1A32F00E7D1E7 /* Coordinator.swift */,
 				FB4AC06925A1A36400E7D1E7 /* AppCoordinator.swift */,
+				FB70FB2A25A2901200D6AD1F /* SearchItemsCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -281,6 +300,48 @@
 				FB4AC08925A1BE3300E7D1E7 /* NetworkError.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		FB70FB1025A2535C00D6AD1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB70FB2F25A2915400D6AD1F /* Cells */,
+				FB4AC00625A18C4D00E7D1E7 /* SearchItemsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB70FB1125A2536700D6AD1F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FB70FB1925A253F500D6AD1F /* SearchItemsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FB70FB1E25A2591000D6AD1F /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				FB70FB1F25A2594600D6AD1F /* DIManager.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		FB70FB2425A285AF00D6AD1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB70FB2525A285E300D6AD1F /* UIViewController+Extensions.swift */,
+				FB70FB3625A2947200D6AD1F /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FB70FB2F25A2915400D6AD1F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FB70FB3125A2917B00D6AD1F /* SearchItemCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -521,12 +582,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB4AC08525A1BDEF00E7D1E7 /* NetworkConstants.swift in Sources */,
+				FB70FB0C25A23AE500D6AD1F /* SearchItemsInteractor.swift in Sources */,
+				FB70FB2025A2594600D6AD1F /* DIManager.swift in Sources */,
 				FB4AC07525A1B14900E7D1E7 /* Interactor.swift in Sources */,
 				FB4AC09225A1BF2E00E7D1E7 /* SearchItemsRepository.swift in Sources */,
+				FB70FB2B25A2901200D6AD1F /* SearchItemsCoordinator.swift in Sources */,
+				FB70FB2625A285E300D6AD1F /* UIViewController+Extensions.swift in Sources */,
+				FB70FB1A25A253F500D6AD1F /* SearchItemsPresenter.swift in Sources */,
 				FB4AC08025A1BDA000E7D1E7 /* BaseNetwork.swift in Sources */,
+				FB70FB3225A2917B00D6AD1F /* SearchItemCell.swift in Sources */,
+				FB70FB3725A2947200D6AD1F /* UIImageView+Extensions.swift in Sources */,
 				FB4AC06225A1A32F00E7D1E7 /* Coordinator.swift in Sources */,
 				FB4AC09725A1BF7500E7D1E7 /* SearchItemsRemoteDataSource.swift in Sources */,
-				FB4AC00725A18C4D00E7D1E7 /* ViewController.swift in Sources */,
+				FB4AC00725A18C4D00E7D1E7 /* SearchItemsViewController.swift in Sources */,
 				FB4AC06A25A1A36400E7D1E7 /* AppCoordinator.swift in Sources */,
 				FB4AC00325A18C4D00E7D1E7 /* AppDelegate.swift in Sources */,
 				FB4AC08A25A1BE3300E7D1E7 /* NetworkError.swift in Sources */,

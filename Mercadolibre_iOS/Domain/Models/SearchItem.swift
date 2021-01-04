@@ -21,6 +21,7 @@ struct SearchItem: Decodable {
     let condition: String // could be an enum
     let thumbnail: String
     let acceptsMercadopago: Bool
+    let installments: Installments
     let address: ItemAddress
     let shipping: Shipping
     
@@ -34,6 +35,7 @@ struct SearchItem: Decodable {
         case condition
         case thumbnail
         case accepts_mercadopago
+        case installments
         case address
         case shipping
     }
@@ -49,6 +51,7 @@ struct SearchItem: Decodable {
         self.condition          = try container.decode(String.self, forKey: .condition)
         self.thumbnail          = try container.decode(String.self, forKey: .thumbnail)
         self.acceptsMercadopago = try container.decode(Bool.self, forKey: .accepts_mercadopago)
+        self.installments       = try container.decode(Installments.self, forKey: .installments)
         self.address            = try container.decode(ItemAddress.self, forKey: .address)
         self.shipping           = try container.decode(Shipping.self, forKey: .shipping)
     }
@@ -59,10 +62,15 @@ struct Seller: Decodable {
     let id: Double // to define could be an String
 }
 
+struct Installments: Decodable {
+    let quantity: Int
+    let amount: Double
+}
+
 struct ItemAddress: Decodable {
     let stateId: String
     let stateName: String
-    let cityId: String
+    let cityId: String?
     let cityName: String
     
     private enum CodingKeys: CodingKey {
@@ -76,13 +84,13 @@ struct ItemAddress: Decodable {
         let container  = try decoder.container(keyedBy: CodingKeys.self)
         self.stateId   = try container.decode(String.self, forKey: .state_id)
         self.stateName = try container.decode(String.self, forKey: .state_name)
-        self.cityId    = try container.decode(String.self, forKey: .city_id)
+        self.cityId    = try container.decodeIfPresent(String.self, forKey: .city_id)
         self.cityName  = try container.decode(String.self, forKey: .city_name)
     }
 }
 
 struct Shipping: Decodable {
-    let freeShipping: Bool // better name maybe?
+    let freeShipping: Bool
     let mode: String // idk what it is
     let logisticType: String // could be an enum
     let storePickup: Bool

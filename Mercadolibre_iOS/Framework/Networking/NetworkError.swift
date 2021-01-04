@@ -10,6 +10,6 @@ import Foundation
 enum NetworkError: String, Error {
     case genericError = "Generic Error"
     case parsingData = "Parsing Error"
-    case responseUnsuccessfull = "Response Unsuccessfull"
+    case invalidURL = "Invalid URL"
     case reachability = "No internet conection detected"
 }
