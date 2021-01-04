@@ -1,15 +1,15 @@
 //
-//  SearchItemCell.swift
+//  ItemDetailCell.swift
 //  Mercadolibre_iOS
 //
-//  Created by Andres Carrillo on 3/01/21.
+//  Created by Andres Carrillo on 4/01/21.
 //
 
 import UIKit
 
-final class SearchItemCell: UITableViewCell {
+final class ItemDetailCell: UITableViewCell {
     
-    static let reuseIdentifier = String(describing: SearchItemCell.self)
+    static let reuseIdentifier = String(describing: ItemDetailCell.self)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: SearchItemCell.reuseIdentifier)
@@ -22,13 +22,12 @@ final class SearchItemCell: UITableViewCell {
     
     //MARK: Configure cell
     
-    func configure(with item: ProductItem) {
-        itemNameLabel.text = item.name
-        itemPriceLabel.text = item.price
-        thumbnailImageView.setImageFrom(url: item.thumbnail)
-        itemInstallmentsLabel.text = item.installmentsItemList
-        itemFreeShippingLabel.text = item.shipping
+    func configure(with item: APISearchItem) {
     }
+    
+    /* This function takes a Double or Int value and returns
+    a String with the value formatted in COP starting with $ symbol
+    i.e: valueEntered = 90000.0 - String returned -> $90.000 */
     
     //MARK: - Setting up views
     
@@ -36,8 +35,8 @@ final class SearchItemCell: UITableViewCell {
         addSubview(thumbnailImageView)
         thumbnailImageView.translatesAutoresizingMaskIntoConstraints = false
         let constraints = [
-            thumbnailImageView.topAnchor.constraint(greaterThanOrEqualTo: self.topAnchor, constant: 16),
-            thumbnailImageView.bottomAnchor.constraint(lessThanOrEqualTo: self.bottomAnchor, constant: -16),
+            thumbnailImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 16),
+            thumbnailImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16),
             thumbnailImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             thumbnailImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             thumbnailImageView.heightAnchor.constraint(equalToConstant: 100),
@@ -85,13 +84,18 @@ final class SearchItemCell: UITableViewCell {
         let constraints = [
             itemFreeShippingLabel.topAnchor.constraint(equalTo: itemInstallmentsLabel.bottomAnchor, constant: 4),
             itemFreeShippingLabel.leadingAnchor.constraint(equalTo: thumbnailImageView.trailingAnchor, constant: 8),
-            itemFreeShippingLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -36),
-            itemFreeShippingLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8)
+            itemFreeShippingLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -36)
         ]
         NSLayoutConstraint.activate(constraints)
     }
     
     //MARK: - Views Init
+    
+    private let conditionAndSoldItemsLabel: UILabel = {
+        let label = UILabel()
+        
+        return label
+    }()
     
     private let thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
@@ -133,3 +137,4 @@ final class SearchItemCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 }
+

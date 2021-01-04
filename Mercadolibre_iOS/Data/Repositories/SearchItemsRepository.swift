@@ -15,7 +15,7 @@ final class SearchItemsRepository {
         self.remoteDataSource = remoteDataSource
     }
     
-    func getListOfItems(params: String, completion: @escaping (Result<SearchResponse, NetworkError>) -> Void) {
+    func getListOfItems(params: String, completion: @escaping (Result<APISearchResponse, NetworkError>) -> Void) {
         remoteDataSource.getSearchedItems(params: params, completion: completion)
     }
 }

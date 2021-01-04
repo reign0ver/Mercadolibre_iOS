@@ -8,5 +8,5 @@
 import Foundation
 
 protocol SearchItemsRemoteDataSource {
-    func getSearchedItems(params: String, completion: @escaping (Result<SearchResponse, NetworkError>) -> Void)
+    func getSearchedItems(params: String, completion: @escaping (Result<APISearchResponse, NetworkError>) -> Void)
 }

@@ -7,18 +7,18 @@
 
 import Foundation
 
-struct SearchResponse: Decodable {
-    let results: [SearchItem]
+struct APISearchResponse: Decodable {
+    let results: [APISearchItem]
 }
 
-struct SearchItem: Decodable {
+struct APISearchItem: Decodable {
     let id: String
     let title: String
     let seller: Seller
     let price: Double
-    let availableQuantity: Int // ultima disponible
+    let availableQuantity: Int
     let soldQuantity: Int
-    let condition: String // could be an enum
+    let condition: String
     let thumbnail: String
     let acceptsMercadopago: Bool
     let installments: Installments
@@ -59,7 +59,7 @@ struct SearchItem: Decodable {
 }
 
 struct Seller: Decodable {
-    let id: Double // to define could be an String
+    let id: Double
 }
 
 struct Installments: Decodable {
@@ -91,8 +91,8 @@ struct ItemAddress: Decodable {
 
 struct Shipping: Decodable {
     let freeShipping: Bool
-    let mode: String // idk what it is
-    let logisticType: String // could be an enum
+    let mode: String
+    let logisticType: String
     let storePickup: Bool
     
     private enum CodingKeys: CodingKey {

@@ -45,6 +45,7 @@ final class SearchItemsViewController: UITableViewController {
     
     private func setupSearchController () {
         searchController.searchBar.delegate = self
+        
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = presenter.searchBarPlaceholder
         navigationItem.searchController = searchController
@@ -62,7 +63,6 @@ final class SearchItemsViewController: UITableViewController {
 
 //MARK: - TableView Delegate and DataSource
 extension SearchItemsViewController {
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -79,7 +79,9 @@ extension SearchItemsViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let currentItem = presenter.items[indexPath.row]
+        let currentItem = presenter.items[indexPath.row]
+        let vc = ItemDetailViewController(item: currentItem)
+        navigationController?.pushViewController(vc, animated: true)
 //        coordinator?.showBreedDetails(breed: currentBreed)
         tableView.deselectRow(at: indexPath, animated: true)
     }

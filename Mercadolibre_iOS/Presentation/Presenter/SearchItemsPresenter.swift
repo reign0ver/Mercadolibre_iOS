@@ -14,7 +14,7 @@ protocol SearchItemsPresenterDelegate: class {
 
 final class SearchItemsPresenter {
     
-    var items: [SearchItem] = []
+    var items: [ProductItem] = []
     weak var view: UIViewController?
     weak var delegate: SearchItemsPresenterDelegate?
     private let searchItemsInteractor: SearchItemsInteractor
@@ -33,7 +33,7 @@ final class SearchItemsPresenter {
             guard let strongSelf = self else { return }
             switch result {
             case .success(let response):
-                strongSelf.items = response.results
+                strongSelf.items = strongSelf.mapResponseIntoEntityView(apiItems: response.results)
                 strongSelf.delegate?.reloadData()
                 strongSelf.view?.hideLoading()
                 break
@@ -43,6 +43,10 @@ final class SearchItemsPresenter {
                 break
             }
         }
+    }
+    
+    private func mapResponseIntoEntityView(apiItems: [APISearchItem]) -> [ProductItem] {
+        return apiItems.map { ProductItem(apiItem: $0) }
     }
     
 }

@@ -9,7 +9,7 @@ import Foundation
 
 final class SearchItemsInteractor: Interactor {
 
-    typealias Response = Result<SearchResponse, NetworkError>
+    typealias Response = Result<APISearchResponse, NetworkError>
     typealias Params = String
     
     private let searchItemsRepository: SearchItemsRepository
