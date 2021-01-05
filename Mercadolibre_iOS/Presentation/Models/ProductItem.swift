@@ -39,6 +39,10 @@ struct ProductItem {
         self.shipping = getTextIfItsFreeShipping(shipping: apiItem.shipping)
     }
     
+    // This function takes a Double or Int value and returns
+    // a String with the value formatted in COP starting with $ symbol
+    // i.e: valueEntered = 90000.0 - String returned -> $90.000
+    
     private func formatPriceWithCountryCurrency(value: Double) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
@@ -49,7 +53,7 @@ struct ProductItem {
     }
     
     private func getAvailableQuantityText(value: Int) -> String {
-        return "\(value) disponibles"
+        return value > 1 ? "\(value) disponibles" : "¡Última disponible!"
     }
     
     private func getSoldQuantityText(value: Int) -> String {
@@ -76,7 +80,7 @@ struct ProductItem {
     }
     
     private func getInstallmentsInDetailFormat(installments: Installments) -> String {
-        return "\(installments.quantity) cuotas de \(formatPriceWithCountryCurrency(value: installments.amount))"
+        return "o en \(installments.quantity) cuotas de \(formatPriceWithCountryCurrency(value: installments.amount))"
     }
     
     private func getFormattedAddress(address: ItemAddress) -> String {

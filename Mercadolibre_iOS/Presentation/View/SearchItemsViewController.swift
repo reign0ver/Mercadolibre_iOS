@@ -9,7 +9,7 @@ import UIKit
 
 final class SearchItemsViewController: UITableViewController {
     
-    weak var coordinator: Coordinator?
+    weak var coordinator: SearchItemsFlow?
     private let presenter: SearchItemsPresenter
     private let searchController: UISearchController
     
@@ -80,14 +80,12 @@ extension SearchItemsViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentItem = presenter.items[indexPath.row]
-        let vc = ItemDetailViewController(item: currentItem)
-        navigationController?.pushViewController(vc, animated: true)
-//        coordinator?.showBreedDetails(breed: currentBreed)
+        coordinator?.coordinateToItemDetails(item: currentItem)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
-//MARK: - Presenter Delegate
+//MARK: - Presenter Delegate: Updates the View when the request to the API Finishes
 
 extension SearchItemsViewController: SearchItemsPresenterDelegate {
     func reloadData() {
@@ -100,6 +98,9 @@ extension SearchItemsViewController: SearchItemsPresenterDelegate {
 // MARK: - SearchController Delegate
 
 extension SearchItemsViewController: UISearchBarDelegate {
+    
+    // func called when a user press the search button in the keyboard.
+    // execute the request to search items if there's text in the searchBar
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let searchText = searchBar.text {
             presenter.executeSearch(with: searchText)

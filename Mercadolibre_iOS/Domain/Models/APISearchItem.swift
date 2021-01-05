@@ -56,6 +56,33 @@ struct APISearchItem: Decodable {
         self.shipping           = try container.decode(Shipping.self, forKey: .shipping)
     }
     
+    init(id: String,
+         title: String,
+         seller: Seller,
+         price: Double,
+         availableQuantity: Int,
+         soldQuantity: Int,
+         condition: String,
+         thumbnail: String,
+         acceptsMercadopago: Bool,
+         installments: Installments,
+         address: ItemAddress,
+         shipping: Shipping
+    ) {
+        self.id = id
+        self.title = title
+        self.seller = seller
+        self.price = price
+        self.availableQuantity = availableQuantity
+        self.soldQuantity = soldQuantity
+        self.condition = condition
+        self.thumbnail = thumbnail
+        self.acceptsMercadopago = acceptsMercadopago
+        self.installments = installments
+        self.address = address
+        self.shipping = shipping
+    }
+    
 }
 
 struct Seller: Decodable {
@@ -87,26 +114,38 @@ struct ItemAddress: Decodable {
         self.cityId    = try container.decodeIfPresent(String.self, forKey: .city_id)
         self.cityName  = try container.decode(String.self, forKey: .city_name)
     }
+    
+    init(stateId: String,
+         stateName: String,
+         cityId: String?,
+         cityName: String
+    ) {
+        self.stateId = stateId
+        self.stateName = stateName
+        self.cityId = cityId
+        self.cityName = cityName
+    }
 }
 
 struct Shipping: Decodable {
     let freeShipping: Bool
-    let mode: String
-    let logisticType: String
     let storePickup: Bool
     
     private enum CodingKeys: CodingKey {
         case free_shipping
-        case mode
-        case logistic_type
         case store_pick_up
     }
     
     init(from decoder: Decoder) throws {
         let container     = try decoder.container(keyedBy: CodingKeys.self)
         self.freeShipping = try container.decode(Bool.self, forKey: .free_shipping)
-        self.mode         = try container.decode(String.self, forKey: .mode)
-        self.logisticType = try container.decode(String.self, forKey: .logistic_type)
         self.storePickup  = try container.decode(Bool.self, forKey: .store_pick_up)
+    }
+    
+    init(freeShipping: Bool,
+         storePickup: Bool
+    ) {
+        self.freeShipping = freeShipping
+        self.storePickup = storePickup
     }
 }

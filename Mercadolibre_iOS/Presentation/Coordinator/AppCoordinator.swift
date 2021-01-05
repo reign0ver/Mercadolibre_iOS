@@ -7,24 +7,29 @@
 
 import UIKit
 
-class AppCoordinator: Coordinator {
+protocol StartFlow: class {
+    func startFlow()
+}
+
+final class AppCoordinator: Coordinator, StartFlow {
     
     var navigationController: UINavigationController
     private let window: UIWindow
+    private let searchItemsCoordinator: SearchItemsCoordinator
     
     init(window: UIWindow) {
         self.navigationController = UINavigationController()
         self.window = window
+        self.searchItemsCoordinator = SearchItemsCoordinator(navController: navigationController)
     }
     
     func start() {
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
-        coordinateToMainCoordinator()
+        startFlow()
     }
     
-    private func coordinateToMainCoordinator() {
-        let searchItemsCoordinator = SearchItemsCoordinator(navController: navigationController) // class variable?
+    func startFlow() {
         coordinate(to: searchItemsCoordinator)
     }
 }

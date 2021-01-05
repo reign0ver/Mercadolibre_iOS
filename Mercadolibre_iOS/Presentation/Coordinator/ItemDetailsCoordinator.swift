@@ -10,15 +10,16 @@ import UIKit
 final class ItemDetailsCoordinator: Coordinator {
     
     var navigationController: UINavigationController
+    private let item: ProductItem
     
-    init(navController: UINavigationController) {
+    init(item: ProductItem, navController: UINavigationController) {
         self.navigationController = navController
+        self.item = item
     }
     
-    func start() { // TODO
-//        let vc = AppDelegate.shared.diManager.getContainer().resolve(SearchItemsViewController.self)!
-//        vc.coordinator = self
-//        navigationController.pushViewController(vc, animated: true)
+    func start() {
+        let vc = ItemDetailViewController(item: item)
+        navigationController.pushViewController(vc, animated: true)
     }
     
 }

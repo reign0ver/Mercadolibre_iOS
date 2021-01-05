@@ -37,5 +37,4 @@ class BaseNetwork {
                 }
             }
     }
-    // TODO - Another func to validate errors
 }

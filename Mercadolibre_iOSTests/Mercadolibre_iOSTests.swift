@@ -8,26 +8,119 @@
 import XCTest
 @testable import Mercadolibre_iOS
 
-class Mercadolibre_iOSTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+final class Mercadolibre_iOSTests: XCTestCase {
+    
+    var searchItemsRepository: SearchItemsRepository!
+    
+    override func setUp() {
+        super.setUp()
+        searchItemsRepository = SearchItemsRepository(SearchItemsServiceMock())
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        super.tearDown()
+        searchItemsRepository = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func test_SearchItems_SuccessfulResponse() {
+        //given
+        var items: [APISearchItem]?
+        let successCase = "Success"
+        let promise = expectation(description: "get items from a search")
+        
+        //when
+        searchItemsRepository.getListOfItems(params: successCase) { result in
+            switch result {
+            case .success(let response):
+                 items = response.results
+                promise.fulfill()
+                break
+            case .failure(_):
+                XCTFail()
+                break
+            }
         }
+        
+        //then
+        wait(for: [promise], timeout: 1.0)
+        XCTAssertNotNil(items)
+    }
+    
+    func test_ProductConditionIsNew() {
+        //given
+        let expectedCondition = "new"
+        
+        //when
+        let item = TestObjects.searchAPIItem_New
+        
+        //then
+        XCTAssertEqual(expectedCondition, item.condition)
+    }
+    
+    func test_ProductConditionIsUsed() {
+        //given
+        let expectedCondition = "used"
+        
+        //when
+        let item = TestObjects.searchAPIItem_Used
+        
+        //then
+        XCTAssertEqual(expectedCondition, item.condition)
+    }
+    
+    func test_MessageWhenItemStockIsOne() {
+        //given
+        let expectedMessage = "¡Última disponible!"
+        
+        //when
+        let item = ProductItem(apiItem: TestObjects.searchAPIItem_StockOne)
+        
+        //then
+        XCTAssertEqual(expectedMessage, item.availableQuantity)
+    }
+    
+    func test_Message_WhenConditionIsNew() {
+        //given
+        let expectedCondition = "Nuevo"
+        
+        //when
+        let item = ProductItem(apiItem: TestObjects.searchAPIItem_New)
+        
+        //then
+        XCTAssertEqual(expectedCondition, item.condition.rawValue)
+    }
+    
+    func test_Message_WhenConditionIsUsed() {
+        //given
+        let expectedCondition = "Usado"
+        
+        //when
+        let item = ProductItem(apiItem: TestObjects.searchAPIItem_Used)
+        
+        //then
+        XCTAssertEqual(expectedCondition, item.condition.rawValue)
+    }
+    
+    func test_Message_WhenIsFreeShipping() {
+        //given
+        let expectedMessage = "Envío gratis"
+        
+        //when
+        let item = ProductItem(apiItem: TestObjects.searchAPIItem_New)
+        
+        //then
+        XCTAssertEqual(expectedMessage, item.shipping)
+    }
+    
+    func test_Message_WhenIsNotFreeShipping() {
+        //given
+        let expectedMessage = ""
+        
+        //when
+        let item = ProductItem(apiItem: TestObjects.searchAPIItem_Used)
+        
+        //then
+        XCTAssertEqual(expectedMessage, item.shipping)
     }
 
 }

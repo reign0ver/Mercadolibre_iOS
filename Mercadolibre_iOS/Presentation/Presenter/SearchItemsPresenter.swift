@@ -33,7 +33,7 @@ final class SearchItemsPresenter {
             guard let strongSelf = self else { return }
             switch result {
             case .success(let response):
-                strongSelf.items = strongSelf.mapResponseIntoEntityView(apiItems: response.results)
+                strongSelf.items = strongSelf.mapAPIResponseIntoEntityView(apiItems: response.results)
                 strongSelf.delegate?.reloadData()
                 strongSelf.view?.hideLoading()
                 break
@@ -45,7 +45,7 @@ final class SearchItemsPresenter {
         }
     }
     
-    private func mapResponseIntoEntityView(apiItems: [APISearchItem]) -> [ProductItem] {
+    private func mapAPIResponseIntoEntityView(apiItems: [APISearchItem]) -> [ProductItem] {
         return apiItems.map { ProductItem(apiItem: $0) }
     }
     

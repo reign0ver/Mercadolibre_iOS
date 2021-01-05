@@ -10,6 +10,7 @@
 		C0E5FDD90A7D3D7EBB74C95A /* Pods_Mercadolibre_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00AF3DFAC722D39F54D1BA3 /* Pods_Mercadolibre_iOS.framework */; };
 		C8BD3D9B9F0247B0C9280879 /* Pods_Mercadolibre_iOS_Mercadolibre_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17D0426AD4D1B9F7E9B674D /* Pods_Mercadolibre_iOS_Mercadolibre_iOSUITests.framework */; };
 		E8D2CA000E996455A9219FA9 /* Pods_Mercadolibre_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A413D9EA02AB1B831DE4DE /* Pods_Mercadolibre_iOSTests.framework */; };
+		FB0B451525A4196F007F4AD6 /* TestObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B451425A4196F007F4AD6 /* TestObjects.swift */; };
 		FB4AC00325A18C4D00E7D1E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */; };
 		FB4AC00525A18C4D00E7D1E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */; };
 		FB4AC00725A18C4D00E7D1E7 /* SearchItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AC00625A18C4D00E7D1E7 /* SearchItemsViewController.swift */; };
@@ -38,6 +39,7 @@
 		FB70FB5625A2FC7400D6AD1F /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB5525A2FC7400D6AD1F /* ItemDetailViewController.swift */; };
 		FB70FB5B25A2FE2000D6AD1F /* ItemDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70FB5A25A2FE2000D6AD1F /* ItemDetailCell.swift */; };
 		FB903F2F25A3826800FB9291 /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB903F2E25A3826800FB9291 /* ProductItem.swift */; };
+		FB903F3725A3F75E00FB9291 /* SearchItemsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB903F3625A3F75E00FB9291 /* SearchItemsServiceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,7 @@
 		C35A38139709D13C157A2176 /* Pods-Mercadolibre_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadolibre_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Mercadolibre_iOS/Pods-Mercadolibre_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AF3DFAC722D39F54D1BA3 /* Pods_Mercadolibre_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mercadolibre_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17D0426AD4D1B9F7E9B674D /* Pods_Mercadolibre_iOS_Mercadolibre_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mercadolibre_iOS_Mercadolibre_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0B451425A4196F007F4AD6 /* TestObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObjects.swift; sourceTree = "<group>"; };
 		FB4ABFFF25A18C4D00E7D1E7 /* Mercadolibre_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mercadolibre_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4AC00225A18C4D00E7D1E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4AC00425A18C4D00E7D1E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 		FB70FB5525A2FC7400D6AD1F /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		FB70FB5A25A2FE2000D6AD1F /* ItemDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailCell.swift; sourceTree = "<group>"; };
 		FB903F2E25A3826800FB9291 /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
+		FB903F3625A3F75E00FB9291 /* SearchItemsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsServiceMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 		FB4AC01825A18C5000E7D1E7 /* Mercadolibre_iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				FB903F4425A415F900FB9291 /* ServicesMock */,
 				FB4AC01925A18C5000E7D1E7 /* Mercadolibre_iOSTests.swift */,
 				FB4AC01B25A18C5000E7D1E7 /* Info.plist */,
 			);
@@ -244,6 +249,7 @@
 		FB4AC04625A1906700E7D1E7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FB903F3B25A4137C00FB9291 /* TestObjects */,
 				FB4AC07025A1AD5A00E7D1E7 /* Repositories */,
 				FB4AC07225A1B07200E7D1E7 /* Services */,
 			);
@@ -289,6 +295,7 @@
 		FB4AC07225A1B07200E7D1E7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FB903F3625A3F75E00FB9291 /* SearchItemsServiceMock.swift */,
 				FB4AC09B25A1C0A900E7D1E7 /* SearchItemsService.swift */,
 			);
 			path = Services;
@@ -362,6 +369,21 @@
 				FB903F2E25A3826800FB9291 /* ProductItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FB903F3B25A4137C00FB9291 /* TestObjects */ = {
+			isa = PBXGroup;
+			children = (
+				FB0B451425A4196F007F4AD6 /* TestObjects.swift */,
+			);
+			path = TestObjects;
+			sourceTree = "<group>";
+		};
+		FB903F4425A415F900FB9291 /* ServicesMock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServicesMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -607,11 +629,13 @@
 				FB4AC07525A1B14900E7D1E7 /* Interactor.swift in Sources */,
 				FB4AC09225A1BF2E00E7D1E7 /* SearchItemsRepository.swift in Sources */,
 				FB70FB2B25A2901200D6AD1F /* SearchItemsCoordinator.swift in Sources */,
+				FB903F3725A3F75E00FB9291 /* SearchItemsServiceMock.swift in Sources */,
 				FB70FB2625A285E300D6AD1F /* UIViewController+Extensions.swift in Sources */,
 				FB70FB1A25A253F500D6AD1F /* SearchItemsPresenter.swift in Sources */,
 				FB70FB5625A2FC7400D6AD1F /* ItemDetailViewController.swift in Sources */,
 				FB4AC08025A1BDA000E7D1E7 /* BaseNetwork.swift in Sources */,
 				FB70FB3225A2917B00D6AD1F /* SearchItemCell.swift in Sources */,
+				FB0B451525A4196F007F4AD6 /* TestObjects.swift in Sources */,
 				FB70FB3725A2947200D6AD1F /* UIImageView+Extensions.swift in Sources */,
 				FB903F2F25A3826800FB9291 /* ProductItem.swift in Sources */,
 				FB70FB3C25A2E6EB00D6AD1F /* ItemDetailsCoordinator.swift in Sources */,

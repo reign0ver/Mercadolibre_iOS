@@ -7,7 +7,11 @@
 
 import UIKit
 
-final class SearchItemsCoordinator: Coordinator {
+protocol SearchItemsFlow: class {
+    func coordinateToItemDetails(item: ProductItem)
+}
+
+final class SearchItemsCoordinator: Coordinator, SearchItemsFlow {
     
     var navigationController: UINavigationController
     
@@ -21,8 +25,9 @@ final class SearchItemsCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func showItemDetails() {
-        // TODO
+    func coordinateToItemDetails(item: ProductItem) {
+        let coordinator = ItemDetailsCoordinator(item: item, navController: navigationController)
+        coordinate(to: coordinator)
     }
     
 }

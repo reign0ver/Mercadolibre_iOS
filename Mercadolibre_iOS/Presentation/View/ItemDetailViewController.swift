@@ -27,13 +27,14 @@ final class ItemDetailViewController: UITableViewController {
     }
     
     private func setupNavigationBar() {
-        self.navigationItem.title = item.name
-        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.largeTitleDisplayMode = .always
     }
     
     private func setupTableView() {
         tableView.register(ItemDetailCell.self, forCellReuseIdentifier: ItemDetailCell.reuseIdentifier)
+        tableView.separatorStyle = .none
+        tableView.allowsSelection = false
     }
     
     required init?(coder: NSCoder) {
@@ -50,10 +51,12 @@ extension ItemDetailViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: ItemDetailCell.reuseIdentifier) as! ItemDetailCell
+        cell.configure(with: item)
+        return cell
     }
 }
