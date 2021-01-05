@@ -20,7 +20,7 @@ You've maybe seen this circle, or any other similar, the number of layers isn't 
 Each circle represent different levels of software in your app, so what levels are for? Okay..
 
 - The **center circle** is the most ***abstract***, and the **outer circle** is the most ***concrete***. 
-This is called the ***Abstraction Principle*** .
+This is called the ***Abstraction Principle***.
 - Each circle can depend only on the nearest inward circle. This is called the ***Dependency Rule***.
 
 As a brief conclusion about we said before and in a easier way to understand, when we talk about ***abstract*** layers, we're talking about ***protocols***.
