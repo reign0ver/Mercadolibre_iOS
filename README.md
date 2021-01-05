@@ -21,8 +21,7 @@ Each circle represent different levels of software in your app, so what levels a
 
 - The **center circle** is the most ***abstract***, and the **outer circle** is the most ***concrete***. 
 This is called the ***Abstraction Principle*** 
-
-- Each circle can depend only on the nearest inward circle. ***Dependency Rule***
+- Each circle can depend only on the nearest inward circle. This is called the ***Dependency Rule***
 
 As a brief conclusion about we said before and in a easier language to understand, when we talk about ***abstract*** layers, we're talking about ***protocols***.
 Why? Easy, protocols define behavior rather than implementation, so they're really abstract. By the other hand when we talk about ***concrete*** layers, 
